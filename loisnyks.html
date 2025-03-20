@@ -1,194 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title>Loisnyks Design</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><Style-Hub></Style-Hub></title>
+    <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Load a font called Roboto from Google Fonts. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <!-- Here are the CSS files for this page. -->
+    <link rel="stylesheet" href="styles/shared/loisnyks-header.css">
+    <link rel="stylesheet" href="styles/pages/loisnyks.css">
+    <link rel="stylesheet" href="styles/shared/general.css">
+  </head>
+  <body>
+    <div class="loisnyks-header">
+      <div class="loisnyks-header-left-section">
+        <a href="loisnyks.html" class="header-link">
+          <img class="loisnyks-logo"
+            src="images/LD-logo-light.png">
+          <img class="loisnyks-mobile-logo"
+            src="images/LD-logo-light.png">
+        </a>
+      </div>
 
-    <link rel="stylesheet" href="./styles/shared/general.css">
-    <link rel="stylesheet" href="./styles/shared/stylehub-header.css">
-    <link rel="stylesheet" href="./styles/pages/checkout/checkout-header.css">
-    <link rel="stylesheet" href="./styles/pages/checkout/checkout.css">
-    <link rel="stylesheet" href="./styles/pages/orders.css">
-    <link rel="stylesheet" href="./styles/pages/stylehub.css">
-    <link rel="stylesheet" href="./styles/pages/tracking.css">
-</head>
+      <div class="loisnyks-header-middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
 
-<body>
-    <div class="stylehub-header">
-        <div class="stylehub-header-left-section">
-            <a href="stylehub.html" class="header-link">
-                <img class="stylehub-logo" src="./images/LD-logo.png" alt="">
-                <img class="stylehub-mobile-logo" src="./images" alt="">
-            </a>
-        </div>
+        <button class="search-button">
+          <img class="search-icon" src="images/icons/search-icon.png">
+        </button>
+      </div>
 
-        <div class="stylehub-header-middle-section">
-            <input class="search-bar" type="text" placeholder="Search">
-            <button class="search-button">
-                <img class="search-icon" src="./images/icons/search-icon.png">
-            </button>
-        </div>
+      <div class="loisnyks-header-right-section">
+        <a class="orders-link header-link" href="orders.html">
+          <span class="returns-text">Returns</span>
+          <span class="orders-text">& Orders</span>
+        </a>
 
-        <div class="stylehub-header-right-section">
-            <a class="orders-link header-link" href="./orders.html">
-                <span class="returns-text">Returns</span>
-                <span class="orders-text">& Orders</span>
-            </a>
-
-            <a class="cart-link header-link" href="./checkout.html">
-                <img class="cart-icon" src="images/icons/cart-icon.png">
-                <div class="cart-quantity">3</div>
-                <div class="cart-text">Cart</div>
-            </a>
-        </div>
+        <a class="cart-link header-link" href="checkout.html">
+          <img class="cart-icon" src="images/icons/cart-icon.png">
+          <div class="cart-quantity">3</div>
+          <div class="cart-text">Cart</div>
+        </a>
+      </div>
     </div>
-
+    
     <div class="main">
-        <div class="product-grind">
-            <div class="product-container">
-                <div class="product-image-container">
-                    <img class="product-image" src="./images/products/accessories/1.jpg" alt="">
-                </div>
-                <div class="product-name product-info">
-                    Black hair band, Hair accessory
-                </div>
+      <div class="products-grid">
+        <div class="product-container">
+          <div class="product-image-container">
+            <img class="product-image"
+              src="images/products/2 piece/green-2piece.jpg">
+          </div>
 
-                <div class="product-rating-container">
-                    <img class="product-stars" src="./images/ratings//rating-40.png">
-                    <div class="product-rating-count link-primary">
-                        87
-                    </div>
-                </div>
+          <div class="product-name limit-text-to-2-lines">
+            Green Ankara Two-Piece
+          </div>
 
-                <div class="product-price">
-                    $19.99
-                </div>
-
-                <div class="class-quantity-container">
-                    <select>
-                        <option selected value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                </div>
-
-                <div class="product-spacer"></div>
-
-                <div class="added-to-cart">
-                    <img src="images/icons/checkmark.png" alt="">
-                    added
-                </div>
-
-                <button class="added-to-cart-button button-primary">
-                    Add to cart
-                </button>
+          <div class="product-rating-container">
+            <img class="product-rating-stars"
+              src="images/ratings/rating-45.png">
+            <div class="product-rating-count link-primary">
+              87
             </div>
-            <div class="product-container">
-                <div class="product-image-container">
-                    <img class="product-image" src="./images/products/accessories/1.jpg" alt="">
-                </div>
-                <div class="product-name product-info">
-                    Black hair band, Hair accessory
-                </div>
+          </div>
 
-                <div class="product-rating-container">
-                    <img class="product-stars" src="./images/ratings//rating-40.png">
-                    <div class="product-rating-count link-primary">
-                        87
-                    </div>
-                </div>
+          <div class="product-price">
+            $10.90
+          </div>
 
-                <div class="product-price">
-                    $19.99
-                </div>
+          <div class="product-quantity-container">
+            <select>
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
 
-                <div class="class-quantity-container">
-                    <select>
-                        <option selected value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                </div>
+          <div class="product-spacer"></div>
 
-                <div class="product-spacer"></div>
+          <div class="added-to-cart">
+            <img src="images/icons/checkmark.png">
+            Added
+          </div>
 
-                <div class="added-to-cart">
-                    <img src="images/icons/checkmark.png" alt="">
-                    added
-                </div>
-
-                <button class="added-to-cart-button button-primary">
-                    Add to cart
-                </button>
-            </div>
-            <div class="product-container">
-                <div class="product-image-container">
-                    <img class="product-image" src="./images/products/accessories/1.jpg" alt="">
-                </div>
-                <div class="product-name limit-text-to-2-lines">
-                    Black hair band, Hair accessory
-                </div>
-
-                <div class="product-rating-container">
-                    <img class="product-stars" src="./images/ratings//rating-40.png">
-                    <div class="product-rating-count link-primary">
-                        87
-                    </div>
-                </div>
-
-                <div class="product-price">
-                    $19.99
-                </div>
-
-                <div class="class-quantity-container">
-                    <select>
-                        <option selected value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                </div>
-
-                <div class="product-spacer"></div>
-
-                <div class="added-to-cart">
-                    <img src="images/icons/checkmark.png" alt="">
-                    added
-                </div>
-
-                <button class="added-to-cart-button button-primary">
-                    Add to cart
-                </button>
-            </div>
-
+          <button class="add-to-cart-button button-primary">
+            Add to Cart
+          </button>
         </div>
+
+        <div class="product-container">
+          <div class="product-image-container">
+            <img class="product-image"
+              src="images/products/2 piece/yellow-2piece.jpg">
+          </div>
+
+          <div class="product-name limit-text-to-2-lines">
+            yellow-2piece
+          </div>
+
+          <div class="product-rating-container">
+            <img class="product-rating-stars"
+              src="images/ratings/rating-40.png">
+            <div class="product-rating-count link-primary">
+              127
+            </div>
+          </div>
+
+          <div class="product-price">
+            $20.95
+          </div>
+
+          <div class="product-quantity-container">
+            <select>
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <div class="product-spacer"></div>
+
+          <div class="added-to-cart">
+            <img src="images/icons/checkmark.png">
+            Added
+          </div>
+
+          <button class="add-to-cart-button button-primary">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product-container">
+          <div class="product-image-container">
+            <img class="product-image"
+              src="images/products/tops/Zebra-shirt.jpg">
+          </div>
+
+          <div class="product-name limit-text-to-2-lines">
+            Zebra-shirt
+          </div>
+
+          <div class="product-rating-container">
+            <img class="product-rating-stars"
+              src="images/ratings/rating-45.png">
+            <div class="product-rating-count link-primary">
+              56
+            </div>
+          </div>
+
+          <div class="product-price">
+            $7.99
+          </div>
+
+          <div class="product-quantity-container">
+            <select>
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <div class="product-spacer"></div>
+
+          <div class="added-to-cart">
+            <img src="images/icons/checkmark.png">
+            Added
+          </div>
+
+          <button class="add-to-cart-button button-primary">
+            Add to Cart
+          </button>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

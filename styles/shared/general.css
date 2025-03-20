@@ -1,6 +1,9 @@
-/* General Styles */
+General Styles
 body {
-  font-family: Roboto, Arial;
+  font-family: 'Roboto', Arial, sans-serif;
+  
+
+
   color: #2c2c2c; /* Dark Neutral: Charcoal Gray */
   /* The <body> element has a default margin of 8px
      on all sides. This removes the default margins. */
@@ -18,11 +21,11 @@ select {
   cursor: pointer;
 }
 
-input,
+/* input,
 select,
 button {
   font-family: Roboto, Arial;
-}
+} */
 
 /* Primary Button */
 .button-primary {
@@ -58,7 +61,8 @@ button {
 }
 
 .button-secondary:hover {
-  background-color: #f8eff1; /* Lighter version of Soft Neutral */
+  background-color: #f8eff1;
+   /* Lighter version of Soft Neutral */
 }
 
 .button-secondary:active {
