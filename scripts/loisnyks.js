@@ -1,30 +1,3 @@
-const products = [{
-    image: 'images/products/2 piece/green-2piece.jpg',
-    name: 'Green Ankara Two-Piece',
-    rating: {
-        stars: 4.5,
-        count: 87
-    },
-    priceCents: 1090
-}, {
-   image: 'images/products/2 piece/yellow-2piece.jpg',
-   name: 'yellow-2piece',
-   rating: {
-    stars: 4.0,
-    count: 127
-},
-priceCents: 2095
-},
-{
-    image: 'images/products/tops/Zebra-shirt.jpg',
-    name: 'Zebra-shirt',
-    rating: {
-     stars: 4.5,
-     count: 56
- },
- priceCents: 799
-}];
-
 
 productsHTML = '';
 
@@ -43,7 +16,7 @@ products.forEach((product) => {
 
           <div class="product-rating-container">
             <img class="product-rating-stars"
-              src="${product.rating.stars * 10}.png">
+              src="images/ratings/rating-${product.rating.stars * 10}.png">
             <div class="product-rating-count link-primary">
               ${product.rating.count}
             </div>
@@ -75,11 +48,41 @@ products.forEach((product) => {
             Added
           </div>
 
-          <button class="add-to-cart-button button-primary">
+          <button class="add-to-cart-button 
+          button-primary js-add-to-cart
+          data-product-id="${product.id}"> 
             Add to Cart
           </button>
         </div>   
     `;
 });
 
+// a data attribute is just an html attribute with name on the left and value on the right
+
 document.querySelector('.js-products-grid').innerHTML = productsHTML;
+
+document.querySelectorAll('.js-add-to-cart').forEach((button) => {
+  button.addEventListener('click', () => {
+    const productId = button.dataset.productId;
+
+
+    let matchingItem; 
+
+    cart.forEach(item => {
+      if (item.productId=== productId) {
+        matchingItem = item;
+      }
+    });
+    
+    if (matchingItem) {
+      matchingItem.quantity += 1;
+    } else {
+      cart.push({
+        productId: productId,
+        quantity: 1
+      });
+    }
+    
+
+  });
+});
