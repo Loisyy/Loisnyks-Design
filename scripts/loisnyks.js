@@ -1,4 +1,5 @@
-
+import {cart} from '../data/cart.js';
+import {products} from '../data/products.js'
 productsHTML = '';
 
 products.forEach((product) => {
@@ -57,7 +58,10 @@ products.forEach((product) => {
     `;
 });
 
-// a data attribute is just an html attribute with name on the left and value on the right
+/*a data attribute is just an html attribute with name on the left and value on the right
+this helps to k now which product to add to cart. 
+the HTML attribute allows us to attach information to an element
+button.dataset will give us all the attributes that are attched to a class*/
 
 document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
