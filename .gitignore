@@ -1,3 +1,2 @@
 node_modules/
-# Ignore generated product data
-/backend/products.json
+backend/products.json
