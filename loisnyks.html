@@ -1,61 +1,59 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Loisnyks Design</title>
+<html lang="en">
 
-    <!-- This code is needed for responsive design to work.
-      (Responsive design = make the website look good on
-      smaller screen sizes like a phone or a tablet). -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="UTF-8">
+  <title>Loisnyks Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Loisnyks Design: Custom fashion designs, stylish collections, and accessories. Discover your look today.">
 
-    <!-- Load a font called Roboto from Google Fonts. -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Here are the CSS files for this page. -->
-    <link rel="stylesheet" href="styles/shared/loisnyks-header.css">
-    <link rel="stylesheet" href="styles/pages/loisnyks.css">
-    <link rel="stylesheet" href="styles/shared/general.css">
-  </head>
-  <body>
-    <div class="loisnyks-header">
-      <div class="loisnyks-header-left-section">
-        <a href="loisnyks.html" class="header-link">
-          <img class="loisnyks-logo"
-            src="images/LD-logo-light.png">
-          <img class="loisnyks-mobile-logo"
-            src="images/LD-logo-light.png">
-        </a>
-      </div>
+  <link rel="icon" href="images/favicon-32x32.png" sizes="32x32">
 
-      <div class="loisnyks-header-middle-section">
-        <input class="search-bar" type="text" placeholder="Search">
+  <link rel="stylesheet" href="styles/shared/loisnyks-header.css">
+  <link rel="stylesheet" href="styles/pages/loisnyks.css">
+  <link rel="stylesheet" href="styles/shared/general.css">
+</head>
 
-        <button class="search-button">
-          <img class="search-icon" src="images/icons/search-icon.png">
-        </button>
-      </div>
-
-      <div class="loisnyks-header-right-section">
-        <a class="orders-link header-link" href="orders.html">
-          <span class="returns-text">Returns</span>
-          <span class="orders-text">& Orders</span>
-        </a>
-
-        <a class="cart-link header-link" href="checkout.html">
-          <img class="cart-icon" src="images/icons/cart-icon.png">
-          <div class="cart-quantity js-cart-quantity">0</div>
-          <div class="cart-text">Cart</div>
-        </a>
-      </div>
+<body>
+  <header class="loisnyks-header">
+    <div class="loisnyks-header-left-section">
+      <a href="loisnyks.html" class="header-link">
+        <img class="loisnyks-logo" src="images/LD-logo-light.png" alt="Loisnyks Logo">
+        <img class="loisnyks-mobile-logo" src="images/LD-logo-light.png" alt="Loisnyks Logo">
+      </a>
     </div>
-    
-    <div class="main">
-      <div class="products-grid js-products-grid">
-      </div>
+
+    <div class="loisnyks-header-middle-section">
+      <input class="search-bar" type="text" placeholder="Search" aria-label="Search">
+      <button class="search-button">
+        <img class="search-icon" src="images/icons/search-icon.png" alt="Search icon">
+      </button>
     </div>
-    
-    <script type="module" src="scripts/loisnyks.js"></script>
-  </body>
+
+    <div class="loisnyks-header-right-section">
+      <a class="orders-link header-link" href="orders.html">
+        <span class="returns-text">Returns</span>
+        <span class="orders-text">& Orders</span>
+      </a>
+
+      <a class="cart-link header-link" href="checkout.html">
+        <img class="cart-icon" src="images/icons/cart-icon.png" alt="Cart Icon">
+        <div class="cart-quantity js-cart-quantity">0</div>
+        <div class="cart-text">Cart</div>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="products-grid js-products-grid"></section>
+  </main>
+
+  <script type="module" src="scripts/loisnyks.js"></script>
+</body>
+
 </html>

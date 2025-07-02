@@ -1,12 +1,12 @@
-import {cart, addToCart} from '../data/cart.js';
-import {products} from '../data/products.js';
+import { cart, addToCart } from '../data/cart.js';
+import { products } from '../data/products.js';
 import { formatCurrency } from './utils/money.js';
 
 let productsHTML = '';
 
 products.forEach((product) => {
-    
-    productsHTML += `
+
+  productsHTML += `
      <div class="product-container">
           <div class="product-image-container">
             <img class="product-image"
@@ -51,9 +51,10 @@ products.forEach((product) => {
             Added
           </div>
 
-          <button class="add-to-cart-button 
-          button-primary js-add-to-cart
-          data-product-id="${product.id}"> 
+         <button 
+           class="add-to-cart-button button-primary js-add-to-cart"
+           data-product-id="${product.id}">
+
             Add to Cart
           </button>
         </div>   
@@ -61,7 +62,7 @@ products.forEach((product) => {
 });
 
 /*a data attribute is just an html attribute with name on the left and value on the right
-this helps to k now which product to add to cart. 
+this helps to know which product to add to cart. 
 the HTML attribute allows us to attach information to an element
 button.dataset will give us all the attributes that are attched to a class*/
 
@@ -83,9 +84,9 @@ function updateCartQuantity() {
 document.querySelectorAll('.js-add-to-cart').forEach((button) => {
   button.addEventListener('click', () => {
     const productId = button.dataset.productId;
-   addToCart(productId);
-   updateCartQuantity();
-    
+    addToCart(productId);
+    updateCartQuantity();
+
 
   });
 });

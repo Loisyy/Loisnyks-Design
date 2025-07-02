@@ -1,22 +1,21 @@
+/* ========== Header Container ========== */
 .loisnyks-header {
-  background-color: #c54b8c; /* Primary: Mulberry Pink */
+  background-color: #c54b8c; /* Mulberry Pink */
   color: white;
-  padding-left: 15px;
-  padding-right: 15px;
-
+  padding: 0 15px;
   display: flex;
   align-items: center;
-  height: 70px;
   justify-content: space-between;
-
+  height: 60px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
   overflow: hidden;
+  z-index: 1000;
 }
 
+/* ========== Left Section ========== */
 .loisnyks-header-left-section {
   width: 180px;
 }
@@ -33,18 +32,17 @@
   border-radius: 2px;
   cursor: pointer;
   text-decoration: none;
+  color: #f5e6e8; /* Beige */
   border: 1px solid transparent;
-  color: #f5e6e8; /* Soft Neutral: Beige */
 }
 
 .header-link:hover {
-  border: 1px solid #b03060; /* Secondary: Raspberry Wine */
+  border: 1px solid #b03060; /* Raspberry Wine */
 }
 
 .loisnyks-logo {
   width: 70px;
-  margin-top: 0px;
-  transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+  transition: background-color 0.3s ease-in-out;
 }
 
 .loisnyks-mobile-logo {
@@ -63,11 +61,11 @@
   }
 }
 
+/* ========== Middle Section ========== */
 .loisnyks-header-middle-section {
   flex: 1;
   max-width: 850px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px;
   display: flex;
 }
 
@@ -77,14 +75,14 @@
   font-size: 16px;
   height: 38px;
   padding-left: 15px;
-  border: 1px solid #b03060; /* Secondary: Raspberry Wine */
+  border: 1px solid #b03060;
   border-radius: 4px 0 0 4px;
-  background-color: #f5e6e8; /* Soft Neutral: Beige */
-  color: #c54b8c; /* Primary: Mulberry Pink */
+  background-color: #f5e6e8;
+  color: #c54b8c;
 }
 
 .search-button {
-  background-color: #b03060; /* Secondary: Raspberry Wine */
+  background-color: #b03060;
   border: none;
   width: 45px;
   height: 40px;
@@ -94,7 +92,7 @@
 }
 
 .search-button:hover {
-  background-color: #993366; /* Accent: Wild Plum */
+  background-color: #993366; /* Wild Plum */
 }
 
 .search-icon {
@@ -103,56 +101,48 @@
   margin-top: 3px;
 }
 
+/* ========== Right Section ========== */
 .loisnyks-header-right-section {
   width: 180px;
   flex-shrink: 0;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.orders-link {
-  color: #f5e6e8; /* Soft Neutral: Beige */
+.orders-link,
+.cart-link {
+  color: #f5e6e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-left: 10px;
 }
 
 .returns-text {
-  display: block;
   font-size: 13px;
 }
 
-.orders-text {
-  display: block;
+.orders-text,
+.cart-text {
   font-size: 15px;
   font-weight: 700;
-}
-
-.cart-link {
-  color: #f5e6e8; /* Soft Neutral: Beige */
-  display: flex;
-  align-items: center;
-  position: relative;
 }
 
 .cart-icon {
   width: 50px;
 }
 
-.cart-text {
-  margin-top: 12px;
-  font-size: 15px;
-  font-weight: 700;
-}
-
 .cart-quantity {
-  color: #2c2c2c; /* Dark Neutral: Charcoal Gray */
+  color: #2c2c2c;
   font-size: 16px;
   font-weight: 700;
-
   position: absolute;
   top: 4px;
   left: 22px;
-
   width: 26px;
   text-align: center;
-  background-color: #f5e6e8; /* Soft Neutral: Beige */
+  background-color: #f5e6e8;
   border-radius: 20px;
 }
